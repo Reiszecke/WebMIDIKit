@@ -41,7 +41,9 @@ internal class MIDIEndpoint : Equatable, Comparable, Hashable {
     }
 
     final var manufacturer: String {
-        return self[string: kMIDIPropertyManufacturer]
+        // crashes on iOS?
+        return "N/A"
+//        return self[string: kMIDIPropertyManufacturer]
     }
 
     final var name: String {
