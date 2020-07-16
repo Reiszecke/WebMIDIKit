@@ -1,6 +1,12 @@
 # WebMIDIKit: Simplest Swift MIDI library
 
-###__[Want to learn audio synthesis, sound design and how to make cool sounds in an afternoon? Check out Syntorial!](http://www.syntorial.com/#a_aid=AudioKit)__
+Some/all the original repositories that I have tried weren't working correctly for me. Either it's to do with SwiftPM version, new Swift Version or iOS 13.X changes but the original repo doesn't appear to be maintained anymore and I haven't figured out how or if you can do issues and pull requests on forks so I kinda had to go my own way here.
+
+Please note that this repo isn't gonna be long-term-support either. I'm gonna use this library during summer and autumn so there's a good chance that there will be iOS 14 support but after that I can't promise anything.. depends on the commercial success of the project that requires this library.
+
+Anway, for now it seems to be working so feel free to make use of it :)
+
+ORIGINAL README BELOW - PLEASE KEEP IN MIND THAT THE REPO URL IS DIFFERENT.
 
 ## About
 
