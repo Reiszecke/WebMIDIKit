@@ -6,6 +6,20 @@ Please note that this repo isn't gonna be long-term-support either. I'm gonna us
 
 Anway, for now it seems to be working so feel free to make use of it :)
 
+
+```
+for (id, port) in midi.inputs {
+	print(id, port)
+}
+```
+
+did not work for me so with this fork you can do:
+
+```
+for (id, port) in midi.hotfixInputs {
+
+```
+
 ORIGINAL README BELOW - PLEASE KEEP IN MIND THAT THE REPO URL IS DIFFERENT.
 
 ## About
