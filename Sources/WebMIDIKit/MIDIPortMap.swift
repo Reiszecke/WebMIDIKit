@@ -93,6 +93,7 @@ public class MIDIPortMap<Value: MIDIPort> : Collection, CustomStringConvertible,
 
 public final class MIDIInputMap : MIDIPortMap<MIDIInput> {
     internal init(client: MIDIClient) {
+        let tests = ["a","b"]
         let inputs = MIDISources().map { MIDIInput(client: client, endpoint: $0) }
         super.init(client: client, ports: inputs)
     }

@@ -14,6 +14,34 @@ public final class MIDIAccess : CustomStringConvertible, CustomDebugStringConver
 
     public let inputs: MIDIInputMap
     public let outputs: MIDIOutputMap
+    
+    public let hotfixInputs: MIDIPortMap<MIDIInput>
+    /*
+     I have no idea what I am doing here but so far the types appear to be compatible.
+     
+     On
+     
+     ```
+         for (id, port) in midi.customInputs {
+             print(id)
+         }
+     ```
+     
+     I only got
+     
+     ```
+         'MIDIInputMap' requires the types 'IndexingIterator<MIDIPortMap<MIDIInput>>' and 'IndexingIterator<MIDIInputMap>' be equivalent
+     ```
+     
+     and even reverting to Swift 4 didn't seem to satisfy Xcode. No idea why this didn't cause
+     trouble for other people but it sure did for me. idk if I can adress the ports like that but
+     if I can get the keys this way use them on the original `inputs` object this may help
+     (if it works).
+     
+     */
+    
+    
+    public let testsA = ["a","b"]
 
     public var onStateChange: ((MIDIPort) -> ())? = nil
 
@@ -22,6 +50,9 @@ public final class MIDIAccess : CustomStringConvertible, CustomDebugStringConver
 
         self.inputs = MIDIInputMap(client: _client)
         self.outputs = MIDIOutputMap(client: _client)
+        
+        self.hotfixInputs = MIDIInputMap(client: _client) //see above
+        
 
         //    self._input = MIDIInput(virtual: _client)
         //    self._output = MIDIOutput(virtual: _client) {
