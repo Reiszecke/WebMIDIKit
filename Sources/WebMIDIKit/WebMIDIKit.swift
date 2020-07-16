@@ -22,7 +22,7 @@ public final class MIDIAccess : CustomStringConvertible, CustomDebugStringConver
      On
      
      ```
-         for (id, port) in midi.customInputs {
+         for (id, port) in midi.inputs {
              print(id)
          }
      ```
@@ -34,9 +34,8 @@ public final class MIDIAccess : CustomStringConvertible, CustomDebugStringConver
      ```
      
      and even reverting to Swift 4 didn't seem to satisfy Xcode. No idea why this didn't cause
-     trouble for other people but it sure did for me. idk if I can adress the ports like that but
-     if I can get the keys this way use them on the original `inputs` object this may help
-     (if it works).
+     trouble for other people but it sure did for me. idk but anyway now I'm able to iterate
+     over and set the input port as well as, based on that, set the output port as well, nice.
      
      */
     
