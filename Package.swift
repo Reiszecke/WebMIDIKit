@@ -5,6 +5,10 @@ import PackageDescription
 
 let package = Package(
     name: "WebMIDIKit",
+    platforms: [
+        .iOS(SupportedPlatform.IOSVersion.v9),
+        .macOS(SupportedPlatform.MacOSVersion.v10_11)
+    ],
     products: [
         .library(
             name: "WebMIDIKit",
