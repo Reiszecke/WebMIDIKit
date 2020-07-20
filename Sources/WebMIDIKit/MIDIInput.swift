@@ -11,9 +11,11 @@ import CoreMIDI
 
 public final class MIDIInput : MIDIPort {
     public var onMIDIMessage: ((MIDIEvent) -> ())? = nil {
+        
         didSet {
-            open()
+            open();
         }
+        
     }
 
     //
