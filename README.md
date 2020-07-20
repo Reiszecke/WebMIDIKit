@@ -6,6 +6,7 @@ Please note that this repo isn't gonna be long-term-support either. I'm gonna us
 
 Anway, for now it seems to be working so feel free to make use of it :)
 
+-
 
 ```
 for (id, port) in midi.inputs {
@@ -20,7 +21,7 @@ for (id, port) in midi.hotfixInputs {
 
 ```
 
-ORIGINAL README BELOW - PLEASE KEEP IN MIND THAT THE REPO URL IS DIFFERENT.
+ORIGINAL README BELOW - PLEASE KEEP IN MIND THAT THE REPO URL IS DIFFERENT. For now, `https://github.com/Reiszecke/WebMIDIKit` at `Version exact 1.0.7` should be usable.
 
 ## About
 
